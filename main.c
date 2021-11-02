@@ -10,12 +10,12 @@ int main() {
 		if(isArmstrong(i))
 			printf("%d ",i);
 	}
-	printf("\nThe palindromes numbers are: ");
+	printf("\nThe Palindromes numbers are: ");
 	for(int i=x;i<=y;i++){
 		if(isPalindrome(i))
 			printf("%d ",i);
 	}
-	printf("\nThe prime numbers are: ");
+	printf("\nThe Prime numbers are: ");
 	for(int i=x;i<=y;i++){
 		if(isPrime(i))
 			printf("%d ",i);
