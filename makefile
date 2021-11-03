@@ -1,5 +1,5 @@
 #make all:all
-all: mains maindloop maindrec #libclassrec.a libclassrec.so libclassloops.so libclassloops.a
+all: mains maindloop maindrec loops #libclassrec.a libclassrec.so libclassloops.so libclassloops.a
 
 basicClassification.o: basicClassification.c NumClass.h
 	gcc -Wall -g -c basicClassification.c
@@ -38,8 +38,8 @@ maindloop: main.o libclassloops.so
 maindrec: main.o libclassrec.so
 	gcc -Wall -o maindrec main.o ./libclassrec.so
 
-.PHONY: clean all loops loopd recursived recursives #mains maindloop maindrec
+.PHONY: clean all
 
-#make clean: clean
+
 clean:
 	rm -f *.o *.a *.so mains maindloop maindrec
