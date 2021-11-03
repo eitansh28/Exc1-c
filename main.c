@@ -10,7 +10,7 @@ int main() {
 		if(isArmstrong(i))
 			printf(" %d",i);
 	}
-	printf("\nThe Palindromes numbers are:");
+	printf("\nThe Palindromes are:");
 	for(int i=x;i<=y;i++){
 		if(isPalindrome(i))
 			printf(" %d",i);
