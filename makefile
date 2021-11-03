@@ -34,11 +34,11 @@ mains: main.o libclassrec.a
 		gcc -Wall -o mains main.o libclassrec.a
 
 #maindloop: maindloop
-maindloop: main.o libclassloops.so
+maindloop: main.o #libclassloops.so
 		gcc -Wall -o maindloop main.o ./libclassloops.so
 
 #maindrec: maindrec
-maindrec: main.o libclassrec.so
+maindrec: main.o #libclassrec.so
 	gcc -Wall -o maindrec main.o ./libclassrec.so
 
 .PHONY: clean all loops loopd recursived loopd recursives make mains make maindloop make maindrec
